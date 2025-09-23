@@ -5,6 +5,10 @@ export default function CTASection() {
   const handleNavigation = () => {
     window.location.href = '/chat';
   };
+  const handleNavigation2 = () => {
+    window.location.href = '/contact';
+  };
+
 
   return (
     <section className="py-20 bg-white" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
@@ -27,7 +31,7 @@ export default function CTASection() {
           </button>
           
           <button 
-            onClick={handleNavigation}
+            onClick={handleNavigation2}
             className="bg-blue-500 text-white hover:bg-blue-600 px-8 py-4 text-lg rounded-full font-medium transition-colors duration-200"
           >
             Schedule Demo
