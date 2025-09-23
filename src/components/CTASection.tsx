@@ -1,5 +1,5 @@
+"use client";
 import React from 'react';
-import { Button } from "@/components/ui/button";
 
 export default function CTASection() {
   const handleNavigation = () => {
@@ -7,8 +7,8 @@ export default function CTASection() {
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 text-center">
+    <section className="py-20 bg-white" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+      <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           <span className="text-gray-800">Ready to Transform Your </span>
           <span className="text-cyan-500">Legal Practice?</span>
@@ -19,20 +19,19 @@ export default function CTASection() {
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button 
+          <button 
             onClick={handleNavigation}
-            variant="outline" 
-            className="border-blue-500 text-blue-500 hover:bg-blue-50 bg-white px-8 py-6 text-lg rounded-full"
+            className="border-2 border-blue-500 text-blue-500 hover:bg-blue-50 bg-white px-8 py-4 text-lg rounded-full font-medium transition-colors duration-200"
           >
             Start Free Trial
-          </Button>
+          </button>
           
-          <Button 
+          <button 
             onClick={handleNavigation}
-            className="bg-blue-500 text-white hover:bg-blue-600 px-8 py-6 text-lg rounded-full"
+            className="bg-blue-500 text-white hover:bg-blue-600 px-8 py-4 text-lg rounded-full font-medium transition-colors duration-200"
           >
             Schedule Demo
-          </Button>
+          </button>
         </div>
       </div>
     </section>
