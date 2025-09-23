@@ -1,52 +1,87 @@
+import React from 'react';
+import { Linkedin, Twitter, Facebook } from 'lucide-react';
 
 export default function Footer() {
-    return (
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">JUGGERNAUT.</h3>
-              <p className="text-slate-400 mb-4">
-                AI-powered legal assistance for professionals and individuals.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Features</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">AI Legal Chatbot</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Document Uploader</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Draft Generator</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Legal Notice Creator</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Flowchart Generator</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Legal Checker</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Company</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Blog</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Disclaimer</a></li>
-              </ul>
-            </div>
+  return (
+    <footer className="bg-white border-t border-gray-100 py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mb-12">
+          {/* Brand Section */}
+          <div className="lg:col-span-2">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">JUGGERNAUT.</h3>
+            <p className="text-gray-600 text-lg leading-relaxed max-w-md">
+              AI-powered legal assistance for professionals and individuals.
+            </p>
           </div>
           
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500">
-            <p>&copy; {new Date().getFullYear()} JurisSmart. All rights reserved.</p>
+          {/* Features Column */}
+          <div>
+            <h4 className="text-lg font-semibold text-gray-900 mb-6">Features</h4>
+            <ul className="space-y-4">
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">AI Legal Chatbot</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Document Uploader</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Draft Generator</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Legal Notice Creator</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Flowchart Generator</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Legal Checker</a></li>
+            </ul>
+          </div>
+          
+          {/* Company Column */}
+          <div>
+            <h4 className="text-lg font-semibold text-gray-900 mb-6">Company</h4>
+            <ul className="space-y-4">
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">About Us</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Blog</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Careers</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Contact</a></li>
+            </ul>
+          </div>
+          
+          {/* Legal Column */}
+          <div>
+            <h4 className="text-lg font-semibold text-gray-900 mb-6">Legal</h4>
+            <ul className="space-y-4">
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Terms of Service</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-base">Disclaimer</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
-    );
-  }
+        
+        {/* Bottom Section */}
+        <div className="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-gray-100">
+          <p className="text-gray-500 text-base mb-4 sm:mb-0">
+            © 2025 JurisSmart. All rights reserved.
+          </p>
+          
+          {/* Social Media Icons */}
+          <div className="flex space-x-4">
+            <a 
+              href="#" 
+              className="p-2 text-gray-400 hover:text-blue-600 transition-colors duration-200 hover:bg-gray-50 rounded-full"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a 
+              href="#" 
+              className="p-2 text-gray-400 hover:text-blue-600 transition-colors duration-200 hover:bg-gray-50 rounded-full"
+              aria-label="Twitter"
+            >
+              <Twitter size={20} />
+            </a>
+            <a 
+              href="#" 
+              className="p-2 text-gray-400 hover:text-blue-600 transition-colors duration-200 hover:bg-gray-50 rounded-full"
+              aria-label="Facebook"
+            >
+              <Facebook size={20} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
